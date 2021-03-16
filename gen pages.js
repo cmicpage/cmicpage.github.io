@@ -11,8 +11,18 @@ let page_range = (
 let gen_page = n => (
 `<title>cmic${n}</title>
 
-${n > 1 ? `<span style="float:left;"><a href="./${n-1}">cmic${n-1}</a></span>` : ""}
-${n < page_count ? `<span style="float:right;"><a href="./${n+1}">cmic${n+1}</a></span>` : ""}
+<style>
+	#menu-bar {
+		display: grid;
+		grid-display-columns: auto max-content auto;
+	}
+</style>
+
+<div id="menu-bar">
+	${n > 1 ? `<div style="grid-column-start: 1; text-align:left;"><a href="./${n-1}">cmic${n-1}</a></div>` : ""}
+	<div style="grid-column-start: 2; text-align:center;"><a href=".">all comics</a></div>
+	${n < page_count ? `<div style="grid-column-start: 3; text-align:right;"><a href="./${n+1}">cmic${n+1}</a></div>` : ""}
+</div>
 
 <img src="./cmic${n}.png" />`
 );
