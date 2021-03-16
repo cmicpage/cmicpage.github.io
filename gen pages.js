@@ -20,7 +20,9 @@ ${n < page_count ? `<span style="float:right;"><a href="./${n+1}">cmic${n+1}</a>
 let index = (
 `<title>cmicpage</title>
 
-View all the comics from here.
+<img src="./Banner.png" />
+
+<p>View all the comics from here.</p>
 
 <ul>
 ${page_range.map(n =>
