@@ -19,9 +19,9 @@ let gen_page = n => (
 </style>
 
 <div id="menu-bar">
-	${n > 1 ? `<div style="grid-column-start: 1; text-align:left;"><a href="./${n-1}">cmic${n-1}</a></div>` : ""}
+	<div style="grid-column-start: 1; text-align:left;">${n > 1 ? `<a href="./${n-1}">cmic${n-1}</a>` : ""}</div>
 	<div style="grid-column-start: 2; text-align:center;"><a href=".">all comics</a></div>
-	${n < page_count ? `<div style="grid-column-start: 3; text-align:right;"><a href="./${n+1}">cmic${n+1}</a></div>` : ""}
+	<div style="grid-column-start: 3; text-align:right;">${n < page_count ? `<a href="./${n+1}">cmic${n+1}</a>` : ""}</div>
 </div>
 
 <img src="./cmic${n}.png" />`
