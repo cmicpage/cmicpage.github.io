@@ -32,6 +32,8 @@ let index = (
 
 <img src="./Banner.png" />
 
+<p><a href="https://discord.gg/2C6st5Swpc">https://discord.gg/2C6st5Swpc</a></p>
+
 <p>View all the comics from here.</p>
 
 <ul>
