@@ -32,15 +32,15 @@ let index = (
 
 <img src="./Banner.png" />
 
-<p><a href="https://discord.gg/2C6st5Swpc">https://discord.gg/2C6st5Swpc</a></p>
-
 <p>View all the comics from here.</p>
 
 <ul>
 ${page_range.map(n =>
 	`\t<li><a href="./${n}">cmic${n}</a></li>`
 ).join("\n")}
-</ul>`
+</ul>
+
+<p><a href="https://discord.gg/2C6st5Swpc">https://discord.gg/2C6st5Swpc</a></p>`
 );
 
 fs.writeFileSync("index.html", index);
