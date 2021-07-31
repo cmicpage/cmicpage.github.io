@@ -11,7 +11,7 @@ let page_range = (
 let gen_page = n => (
 `<meta property="og:title" content="cmic${n}" />
 <meta property="og:type" content="website" />
-<meta property="og:image" content="./cmic${n}.png" />
+<meta property="og:image" content="https://cmicpage.github.io/cmic${n}.png" />
 <meta property="og:url" content="https://cmicpage.github.io/cmic${n}" />
 
 <meta property="og:description" content="READERADERE TEHEH CMICMICI" />
@@ -37,7 +37,7 @@ let gen_page = n => (
 let index = (
 `<meta property="og:title" content="cmic" />
 <meta property="og:type" content="website" />
-<meta property="og:image" content="./Thumbnail.png" />
+<meta property="og:image" content="https://cmicpage.github.io/Thumbnail.png" />
 <meta property="og:url" content="https://cmicpage.github.io" />
 <meta property="og:description" content="READERADERE TEHEH CMICMICI" />
 
