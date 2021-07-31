@@ -9,7 +9,11 @@ let page_range = (
 	.map((_,i) => i + 1));
 
 let gen_page = n => (
-`<title>cmic${n}</title>
+`<meta property="og:image" content="./cmic${n}.png" />
+<meta property="og:title" content="cmic${n}" />
+<meta property="og:description" content="READERADERE TEHEH CMICMICI" />
+
+<title>cmic${n}</title>
 
 <style>
 	#menu-bar {
@@ -28,7 +32,11 @@ let gen_page = n => (
 );
 
 let index = (
-`<title>cmicpage</title>
+`<meta property="og:image" content="./Thumbnail.png" />
+<meta property="og:title" content="cmic" />
+<meta property="og:description" content="READERADERE TEHEH CMICMICI" />
+
+<title>cmicpage</title>
 
 <img src="./Banner.png" />
 
